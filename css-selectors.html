@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSS Selectors</title>
+<style>
+#pagecontainer {
+	min-height:100vh;
+	position:relative;
+	padding-bottom:30px;
+}	
+
+h2, #endpara {
+	color: green;
+	padding:15px;
+}
+
+#content > p {
+	background-color:brown;
+	color:lightgreen;
+	padding:20px;
+	border:1px solid rebeccapurple;
+}
+
+#content > p:hover {
+	background-color:black;
+}
+
+#content:first-child {
+	color:orange;
+	background-color:blue;
+	border:1px solid green;
+}
+p a[href="https://github.com/priteshkumar/html-css/"] {
+	color:orange;
+	font-style:bold;
+}
+#pagecontainer p[id="endpara"] {
+	font-family:sans-serif;
+	min-width:13%;
+	max-width:15%;
+	min-height:30px;
+	text-align:center;
+	border:1px dotted blue;
+	background:red;
+}
+#endpara + p {
+	color:blue;
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div id="pagecontainer">
+<div id="header">
+<h2>Hello CSS-SELECTORS!!!</h2>
+</div>
+<div id="content">
+<p>CSS is cool. It offers styling html elements.
+CSS selectors are used to select elements,for
+styling</p>
+<p>CSS selector has pseudoclasses, to style
+elements in specific state e.g. mouse hover</p>
+<p>CSS Box model is essential for layouts</p>
+</div>
+<p id="endpara"><a href="https://github.com/priteshkumar/html-css/">
+	<b>This ends here...</b></a></p>
+<p>Bye see you...!!</p>
+</div>
+</body>
+</html>
+
