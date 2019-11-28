@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lamg="en">
+<head>
+<meta charset="utf-8">
+<title>CSS-ATTRIBUTE SELECTOR</title>
+<style>
+
+ul li {
+	padding:10px;
+}
+a {
+    display: inline-block;
+    width:140px;
+    text-align:center;	    
+    border: 5px solid grey;
+   	    
+}
+
+a[title] {
+    border-color:pink
+}
+
+a[href="http://example.com"] {
+	border-color:brown;
+
+}
+
+a[href*="contact"] {
+   border-color:orange;
+}
+a[href^="https"] {
+   border-color:green;
+}
+
+ol > li[href*="github"] {
+	border:1px solid blue;
+}
+</style>
+</head>
+
+<body>
+	<div><h2><b>Css Attribute Selectors!!!</b></h2></div>
+<ul>
+    <li><a href="https://example.com">Link 1</a></li>
+    <li><a href="http://example.com" title="Visit example.com">Link 2</a></li>
+    <li><a href="/contact">Link 3</a></li>
+    <li><a href="../contact/index.html">Link 4</a></li>
+    <ol>
+    <li><a href="https://github.com">Link 5</a></li>
+    </ol>
+</ul>
+</body>
+</html>
