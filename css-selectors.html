@@ -15,7 +15,7 @@ h2, #endpara {
 	padding:15px;
 }
 
-#content > p {
+#content > p:nth-child(n+2) {
 	background-color:brown;
 	color:lightgreen;
 	padding:20px;
@@ -26,10 +26,11 @@ h2, #endpara {
 	background-color:black;
 }
 
-#content:first-child {
+#content > p:first-child {
 	color:orange;
 	background-color:blue;
 	border:1px solid green;
+	padding:20px;
 }
 p a[href="https://github.com/priteshkumar/html-css/"] {
 	color:orange;
