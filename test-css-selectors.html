@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TestCSSselectors</title>
+<style>
+#pagecontainer {
+	position:relative;
+	min-height:100vh;
+	text-align:center;
+	padding-bottom:40px;
+	border:1px solid blue;
+}
+
+#header {
+	text-align:center;
+	width:100%;
+	height:60px;
+	background-color:black;
+	color:blue;
+}
+
+#header h2 {
+	padding-top:15px;
+}
+ul {    
+	width:50%;
+	border:2px dotted black;
+	margin:auto;
+	margin-top:20px;
+	padding:15px;
+	list-style:none;
+   }
+
+ul > li:first-child{
+	background-color:green;
+	color:black;
+	font-weight:bold;
+	padding:10px;
+	margin:5px;
+	
+}
+
+ul > li:nth-child(n+2) {
+	background-color:red;
+	padding:10px;
+	margin:5px;
+	font-weight:bold
+}
+
+li > a {
+	display:inline-block;
+	padding:5px;
+}
+
+li > a[href*="github"] {
+	background-color:yellow;
+}
+li > a:nth-child(n+2){
+	background-color:blue;
+	color:white;
+}
+li > a:hover {
+	background-color: green;
+}
+</style>
+<head>
+<body>
+<div id="pagecontainer">
+<div id="header"><h2>Hello CSS!!!</h2>
+</div>
+<ul id="csslist">
+<li>Hello world</li>
+<li>Hello Devops</li>
+<li>Hello linux admin</li>
+<li><a href="https://github.com/priteshkumar">Github</a>
+<a href="https://stackexchange.com/users/11486277/mavpks">StackOverflow</a>
+<a href="https://www.linkedin.com/in/pritesh-singh-0053a21a/">LinkedIn</a>
+</li>
+</ul>
+</div>
+</body>
+</html>
+
