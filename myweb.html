@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TestCSSselectors</title>
+<style>
+#pagecontainer {
+	position:relative;
+	min-height:100vh;
+	text-align:center;
+	padding-bottom:40px;
+	border:1px solid blue;
+}
+
+#header {
+	text-align:center;
+	width:100%;
+	height:60px;
+	background-color:black;
+	color:blue;
+}
+
+#header h2 {
+	padding-top:15px;
+}
+#mysnap {
+	width:50%;
+}
+
+ul, #content {    
+	width:50%;
+	border:2px dotted black;
+	margin:auto;
+	margin-top:20px;
+	padding:15px;
+	background-color:#f0f0f0;
+	
+   }
+
+#content {
+	display:flex;
+	background-color:#f0f0f0;
+
+}
+
+#aboutme {
+	max-width:40%;
+	margin:auto;
+	padding-left:5px;
+	font-size:18px;
+	overflow:auto;
+}
+
+ul {
+	list-style:none;
+}
+ul > li:first-child{
+	background-color:green;
+	color:black;
+	font-weight:bold;
+	padding:10px;
+	margin:5px;
+	
+}
+
+ul > li:nth-child(n+2) {
+	background-color:red;
+	padding:10px;
+	margin:5px;
+	font-weight:bold
+}
+
+li > a {
+	display:inline-block;
+	padding:5px;
+}
+
+ul > li:nth-child(n) > a {
+	background-color:yellow;
+	width:120px;
+}
+
+li > a:hover {
+	background-color: green;
+}
+
+</style>
+<head>
+<body>
+<div id="pagecontainer">
+<div id="header"><h2>Hello CSS!!!</h2>
+</div>
+<div id="content">
+<img id="mysnap" src="assets/images/snapsf5.jpg" height="320">
+<p id="aboutme">HI there ,this is Pritesh.I live in Bangalore,India.I am a cs student.
+I code in Python,Bash.Devops/Automation is my passion.I like tooling and automating things as much as possible.
+Earlier I worked in Samsung/Qualcomm/TataElxsi as software developer.
+Music is my hobby.I enjoy listening to postrock/trance/electronic/rap music.
+Maserati/Mogwai/God is An astronaut are some of my favourite bands.
+I enjoy walking,surfing web,traveling.Coffee is my brew.Ocassionally i drink beer all kinds.
+My motto in life is to code more and enjoy everything which comes to me.
+I like going through challenges.
+</p>
+</div>
+<ul id="csslist">
+<li><a href="https://github.com/priteshkumar">Github</a></li>
+<li><a href="https://stackexchange.com/users/11486277/mavpks">StackOverflow</a></li>
+<li><a href="https://www.linkedin.com/in/pritesh-singh-0053a21a/">LinkedIn</a></li>
+</ul>
+</div>
+</body>
+</html>
+
